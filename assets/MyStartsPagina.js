@@ -1,1 +1,1 @@
-import{_ as o,r as e,o as n,c,w as r,a as s}from"./app.js";const _={};function f(i,l){const t=e("StartPage"),a=e("PageView");return n(),c(a,null,{default:r(()=>[s(t)]),_:1})}const m=o(_,[["render",f]]);export{m as default};
+import{_ as o,r as e,o as n,c,w as r,a as s}from"./app-ac235d82.js";const _={};function f(i,l){const t=e("StartPage"),a=e("PageView");return n(),c(a,null,{default:r(()=>[s(t)]),_:1})}const m=o(_,[["render",f]]);export{m as default};

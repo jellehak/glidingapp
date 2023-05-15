@@ -1,1 +1,62 @@
-const r="0.0.0",i="glidingapp.com",s=r,o=["./","./assets/app.js","./assets/index.css"];self.addEventListener("install",function(e){e.waitUntil(caches.open(`${s}-${i}`).then(function(t){return t.addAll(o)}))});self.addEventListener("activate",function(e){e.waitUntil(caches.keys().then(function(t){return Promise.all(t.filter(n=>n.indexOf(s)!==0).map(n=>caches.delete(n)))}))});self.addEventListener("fetch",function(e){var n;const t=e.request;if(t.method!=="GET"){e.respondWith(fetch(t));return}if(((n=t.headers.get("Accept"))==null?void 0:n.indexOf("text/html"))!==-1&&t.url.startsWith(this.origin)){e.respondWith(fetch(t).then(c=>{const h=c.clone();return caches.open(s+i).then(a=>a.put(t,h)),c}).catch(()=>caches.match(t).then(c=>c||caches.match("/"))));return}else e.respondWith(caches.match(t).then(c=>c||fetch(t)))});
+/// <reference lib="WebWorker" />
+
+// import { version } from '../package.json';
+
+const CACHE_NAME = 'glidingapp.com';
+const CACHE_VERSION = "1.0.0";
+const urlsToCache = [
+  './',
+  './assets/app.js',
+  './assets/index.css'
+];
+
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open(`${CACHE_VERSION}-${CACHE_NAME}`)
+      .then(function(cache) {
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
+
+self.addEventListener("activate", function (event) {
+  event.waitUntil(
+    caches.keys().then(function (keys) {
+      return Promise.all(
+        keys
+          .filter((key) => key.indexOf(CACHE_VERSION) !== 0)
+          .map((key) => caches.delete(key))
+      );
+    })
+  );
+});
+
+self.addEventListener("fetch", function (event) {
+  const request = event.request;
+
+  if (request.method !== "GET") {
+    event.respondWith(fetch(request));
+    return;
+  }
+
+  if (
+    request.headers.get("Accept")?.indexOf("text/html") !== -1 &&
+    request.url.startsWith(this.origin)
+  ) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_VERSION + CACHE_NAME).then((cache) => cache.put(request, copy));
+          return response;
+        })
+        .catch(() => caches.match(request).then((response) => response || caches.match("/")))
+    );
+    return;
+  } else {
+    event.respondWith(
+      caches.match(request)
+        .then((response) => response || fetch(request))
+    );
+  }
+});

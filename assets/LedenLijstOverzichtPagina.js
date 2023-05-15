@@ -1,1 +1,1 @@
-import{r as e,o,c,w as i,a as s}from"./app.js";const l={__name:"LedenLijstOverzichtPagina",props:{id:{}},setup(t){return(r,_)=>{const a=e("LedenLijstOverzichtPage"),n=e("PageView");return o(),c(n,null,{default:i(()=>[s(a,{id:t.id},null,8,["id"])]),_:1})}}};export{l as default};
+import{r as e,o,c,w as i,a as s}from"./app-ac235d82.js";const l={__name:"LedenLijstOverzichtPagina",props:{id:{}},setup(t){return(r,_)=>{const a=e("LedenLijstOverzichtPage"),n=e("PageView");return o(),c(n,null,{default:i(()=>[s(a,{id:t.id},null,8,["id"])]),_:1})}}};export{l as default};

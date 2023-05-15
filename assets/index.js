@@ -1,1 +1,1 @@
-import{_ as a,r as e,o as c,c as n,w as r,a as s}from"./app.js";const _={};function i(f,l){const o=e("DagOverzichtPage"),t=e("PageView");return c(),n(t,null,{default:r(()=>[s(o)]),_:1})}const d=a(_,[["render",i]]);export{d as default};
+import{_ as a,r as e,o as c,c as n,w as r,a as s}from"./app-ac235d82.js";const _={};function i(f,l){const o=e("DagOverzichtPage"),t=e("PageView");return c(),n(t,null,{default:r(()=>[s(o)]),_:1})}const d=a(_,[["render",i]]);export{d as default};
