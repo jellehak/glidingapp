@@ -1,0 +1,1 @@
+import{_ as c,r as e,o as n,c as r,w as o,a as s,b as _}from"./app.js";const l={};function i(f,m){const t=e("WorkInProgress"),a=e("PageView");return n(),r(a,null,{default:o(()=>[s(t,null,{default:o(()=>[_("ActivateEmailPage")]),_:1})]),_:1})}const p=c(l,[["render",i]]);export{p as default};

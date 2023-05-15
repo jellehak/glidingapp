@@ -1,0 +1,1 @@
+import{_ as a,r as e,o as t,c,w as r,a as s}from"./app.js";const _={};function d(i,u){const n=e("MijnOnderhoudPage"),o=e("PageView");return t(),c(o,null,{default:r(()=>[s(n)]),_:1})}const l=a(_,[["render",d]]);export{l as default};

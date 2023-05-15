@@ -1,0 +1,1 @@
+import{_ as o,r as s,o as a,j as r,a as n,h as c}from"./app.js";const i={data:e=>({items:[]}),async mounted(){this.items=await service.getItems()}},_=c("h1",null,"Materials",-1);function m(e,p,d,l,u,f){const t=s("router-view");return a(),r("div",null,[_,n(t)])}const h=o(i,[["render",m]]);export{h as default};
