@@ -1,1 +1,0 @@
-import{_ as c,r as e,o,c as n,w as r,a as s}from"./app.js";const _={};function i(g,f){const a=e("DagOverzichtPage"),t=e("PageView");return o(),n(t,null,{default:r(()=>[s(a)]),_:1})}const p=c(_,[["render",i]]);export{p as default};
