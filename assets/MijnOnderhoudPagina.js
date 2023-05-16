@@ -1,1 +1,1 @@
-import{_ as a,r as e,o as t,c,w as r,a as s}from"./app-ac235d82.js";const _={};function d(i,u){const n=e("MijnOnderhoudPage"),o=e("PageView");return t(),c(o,null,{default:r(()=>[s(n)]),_:1})}const l=a(_,[["render",d]]);export{l as default};
+import{_ as a,r as e,o as t,c,w as r,a as s}from"./app-8d6ad3d5.js";const _={};function d(i,u){const n=e("MijnOnderhoudPage"),o=e("PageView");return t(),c(o,null,{default:r(()=>[s(n)]),_:1})}const l=a(_,[["render",d]]);export{l as default};

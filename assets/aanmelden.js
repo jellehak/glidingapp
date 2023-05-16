@@ -1,1 +1,1 @@
-import{r as a,o,c as t}from"./app-ac235d82.js";const l={__name:"aanmelden",props:{id:String},setup(e){return(r,c)=>{const n=a("AanmeldPage");return o(),t(n,{id:e.id},null,8,["id"])}}};export{l as default};
+import{r as a,o,c as t}from"./app-8d6ad3d5.js";const l={__name:"aanmelden",props:{id:String},setup(e){return(r,c)=>{const n=a("AanmeldPage");return o(),t(n,{id:e.id},null,8,["id"])}}};export{l as default};
